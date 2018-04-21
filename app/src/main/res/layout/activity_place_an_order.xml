@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apu5n.version_x.PlaceAnOrder">
+
+    <RelativeLayout
+        android:id="@+id/RL_Place_An_Order_Titel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:id="@+id/TV_Place_An_Order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/color3"
+            android:paddingBottom="10dp"
+            android:paddingTop="6dp"
+            android:text="@string/Place_An_Order"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL_Links"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/RL_Adhik_mass"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="11dp"
+            android:background="@color/colorPrimary"
+            android:onClick="Home"
+            android:text="@string/Home"
+            android:textColor="@color/text"
+            android:textColorLink="@android:color/holo_green_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Puja_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Home"
+            android:layout_alignBottom="@+id/Home"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/Home"
+            android:layout_toRightOf="@+id/Home"
+            android:background="@color/colorPrimary"
+            android:onClick="Puja_List"
+            android:text="@string/Puja_List"
+            android:textColor="@color/text"
+            android:textColorLink="@android:color/holo_green_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Place_An_Order"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/Puja_List"
+            android:layout_alignBottom="@+id/Puja_List"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/Puja_List"
+            android:layout_toRightOf="@+id/Puja_List"
+            android:background="@color/colorPrimary"
+            android:onClick="Place_An_Order"
+            android:text="@string/Place_An_Order"
+            android:textColor="@color/text"
+            android:textColorLink="@android:color/holo_green_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/SC_Palce_an_Order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/RL_Links"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:id="@+id/LL_SC_Palce_an_oeder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/GiveName"
+                android:layout_width="match_parent"
+
+                android:text="@string/Name"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="15dp"
+                android:ems="17"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/GiveChooseYourPujaSet"
+                android:layout_width="match_parent"
+                android:text="@string/Choose_Your_Puja_Set"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/PAO_Spinner_List"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:dropDownWidth="match_parent"
+                android:padding="5dp"
+                android:autofillHints="@string/Choose_Your_Puja_Set"
+                android:paddingTop="3dp" />
+
+            <TextView
+                android:id="@+id/GivePhone"
+                android:layout_width="match_parent"
+                android:text="@string/Mobile_Number"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="15dp"
+                android:ems="10"
+
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/GiveAddress"
+                android:layout_width="match_parent"
+                android:text="@string/Address"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="15dp"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/TotalCosts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/PlaceTheOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/yellow"
+                android:padding="10dp"
+                android:text="@string/Place_The_Order"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

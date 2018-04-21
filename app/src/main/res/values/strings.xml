@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">|| Puja Samagri set ||</string>
+    <string name="Home">|| Home ||</string>
+    <string name="Puja_List">|| Puja List ||</string>
+    <string name="Place_An_Order">|| Place Order ||</string>
+    <string name="Slogan">Order your Puja Samagri Set now!</string>
+
+    <string name="Recent_Pujas">RECENT PUJAS</string>
+    <string name="Satyanarayan">Satyanarayan</string>
+    <string name="Diwali_Puja">Diwali Puja</string>
+    <string name="Adik_Mass">Adhik Mass</string>
+
+    <string name="AllYears">All Year</string>
+    <string name="About_Us">About Us</string>
+    <string name="About_Us_data">Puja Samagri Set is an Android application supported all versions of android form Jellybeans which provides its user
+        with entire set of Puja items with its appropriate amount and price. Also the app provides free home
+        delivery for purches orders of more than Rs.300.\n Due to this user can save much of his time
+        on searching and comparing prices of various items on different sites and get entire set with one click.
+        \nAlso customer gets details about puja setup, story behind the festival</string>
+
+    <string name="Mahatmya"> 1.  The sun moves through one star/ zodiac sign in every month; but during ‘ Adhik Maas ’ it remains
+        stationary; therefore, there is no ‘Surya-sankrant’ in ‘ Adhik Maas ’.\n \nIt affects the movement of moon and
+        sun and change is observed even in atmosphere like during period of eclipse. \nTo avoid adverse effects of such changing
+        unfavorable atmosphere on our health, it has been advised to follow different vowed religious observances and virtuous acts.
+        \n\nDuring ‘ Adhik Maas ’, one should keep fast, ‘avachit Bhojan’, ‘Nakta-bhojan’ or eat only once for Shri.
+        Purushottam. \n\n
+        One, who is weak, can observe one of the above four types at least for 3 days or one day in this month.\n
+        If it is not possible to give donations/ offerings throughout the month, donations can be given on ‘Shukla’ and ‘Krushna’,
+        on ‘tithi’ like Dwadashi, Pournima, Krushna Ashtami, Navami, Chaturdashi, Amavasya and on ‘Vyatipat’ and ‘Vaidhruti’ Yoga,
+        is what is prescribed in science.
+
+During this month, perform puja’ of Shri. \n\n 2.  Purushottam Krushna and chant His name; try to be in constant communion with Him.
+
+Have meals once in a day; do not talk while eating as it increases inner strength.\n\n Having meals without talking helps to absolve one’s sins.
+
+Have holy bath; \nhaving bath in River Ganga even one day helps in elimination of all sins.
+
+Donate ‘Deep (lamp)’.\n\n 3.  If a lamp is kept lighted all the time before God, it helps in financial gains (Lakshmi).
+
+Go on pilgrimage.\n Have ‘darshan’ of God.
+
+Donate Beetle-leaf/ money (Vida-dakshina). By donating beetle leaf throughout the month, one’s fortune can change for better.
+
+Worship cow (Gou-pujan). \nFeed a cow.\n
+
+‘Apush-dan (anarasas, a sweet)’ is also advised.</string>
+    <string name="Recent2_Date">Date:dd/mm/yy</string>
+
+    <string name="Recent3_Date">Date:dd/mm/yy</string>
+
+    <string name="Puja_List_Bottam_Line">Puja Samagri set avaliable for these Pujas !!!!</string>
+
+
+    <string name="Recent2">Diwali Puja</string>
+    <string name="Recent3">Adhik Mass</string>
+    <string name="AllYear">Satyanarayan</string>
+
+    <string name="Name">Name : </string>
+    <string name="Choose_Your_Puja_Set">Choose Your Puja Set : </string>
+    <string name="Address">Address : </string>
+    <string name="Mobile_Number">Mobile Number of Receiving Person : </string>
+    <string name="Place_The_Order">Place The Order</string>
+
+
+</resources>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apu5n.version_x.MainActivity">
+
+    <ScrollView
+        android:id="@+id/SV_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/LL_ImageSlider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RL_ImageSlider"
+            android:layout_width="fill_parent"
+            android:layout_height="280dp">
+
+            <Button
+                android:id="@+id/Slogan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:background="@android:drawable/divider_horizontal_textfield"
+                android:padding="0dp"
+                android:text="@string/Slogan"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:textStyle="normal|bold|italic" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="280dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL_Links"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/LL_ImageSlider"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="11dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/Home"
+            android:onClick="Home"
+            android:textColor="@color/text"
+            android:textColorLink="@android:color/holo_green_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Puja_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Home"
+            android:layout_alignBottom="@+id/Home"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/Home"
+            android:layout_toRightOf="@+id/Home"
+            android:background="@color/colorPrimary"
+            android:text="@string/Puja_List"
+            android:onClick="Puja_List"
+            android:textColor="@color/text"
+            android:textColorLink="@android:color/holo_green_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Place_An_Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Puja_List"
+            android:layout_alignBottom="@+id/Puja_List"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/Puja_List"
+            android:layout_toRightOf="@+id/Puja_List"
+            android:background="@color/colorPrimary"
+            android:onClick="Place_An_Order"
+            android:text="@string/Place_An_Order"
+            android:textColor="@color/text"
+            android:textColorLink="@android:color/holo_green_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/RL_Recent_Pujas"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="0dp">
+
+                <TextView
+                    android:id="@+id/Recent_Pujas"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/color3"
+                    android:paddingTop="5dp"
+                    android:text="@string/Recent_Pujas"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/RL_Recent1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/Recent_Pujas"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <Button
+                        android:id="@+id/Recent1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@color/text"
+                        android:text="@string/Diwali_Puja"
+                        android:textColor="@color/text2"
+                        android:textColorLink="@android:color/holo_green_light"
+                        android:textSize="17sp"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/Recent_1_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="65dp"
+                        android:layout_marginRight="65dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/Recent2_Date"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL_Recent2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/RL_Recent1"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <Button
+                        android:id="@+id/Recent2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@color/text"
+                        android:text="@string/Adik_Mass"
+                        android:onClick="Adhik_Mass"
+                        android:textColor="@color/text2"
+
+                        android:textSize="17sp"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/Recent_2_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="65dp"
+                        android:layout_marginRight="65dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/Recent3_Date"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/About_Us"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/color3"
+                android:paddingTop="5dp"
+                android:text="@string/About_Us"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/About_us_Data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/About_Us_data"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

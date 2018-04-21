@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apu5n.version_x.Adhik_mass">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/RL_Adhik_mass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/up" />
+
+                <TextView
+                    android:id="@+id/Adhik_mass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/color3"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="6dp"
+                    android:text="@string/Recent3"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/up" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_Links"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/RL_Adhik_mass"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorPrimary">
+
+                <Button
+                    android:id="@+id/Home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="11dp"
+                    android:background="@color/colorPrimary"
+                    android:onClick="Home"
+                    android:text="@string/Home"
+                    android:textColor="@color/text"
+                    android:textColorLink="@android:color/holo_green_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/Puja_List"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/Home"
+                    android:layout_alignBottom="@+id/Home"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/Home"
+                    android:layout_toRightOf="@+id/Home"
+                    android:background="@color/colorPrimary"
+                    android:onClick="Puja_List"
+                    android:text="@string/Puja_List"
+                    android:textColor="@color/text"
+                    android:textColorLink="@android:color/holo_green_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/RL_Adhik_mass"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                app:srcCompat="@drawable/d" />
+
+            <Button
+                android:id="@+id/Slogan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
+                android:background="@color/text"
+                android:padding="0dp"
+                android:text="Adhik mass mandani"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/smagri_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450dp"
+                android:background="@color/color2"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Mahatmya"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Mahatmya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="500dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:text="@string/Mahatmya"
+                android:textAlignment="inherit"
+                android:textColor="@color/text2"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/Smagri_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1520dp"
+                android:background="@color/color2"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Samagri List"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1560dp"
+                app:srcCompat="@drawable/samagri" />
+
+            <Button
+                android:id="@+id/Place_An_Order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/RL_Links"
+                android:layout_alignBottom="@+id/RL_Links"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:background="@color/colorPrimary"
+                android:onClick="Place_An_Order"
+                android:text="@string/Place_An_Order"
+                android:textColor="@color/text"
+                android:textColorLink="@android:color/holo_green_light"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
